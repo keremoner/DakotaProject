@@ -1,0 +1,55 @@
+body{
+	margin: 0px;
+	background-color: #162235;
+}
+.navigator{
+	height: 55px;
+	margin-top: 0px;
+	background-color: #243859;
+}
+.content{
+	font-family: Open Sans;
+	color: white;
+	float: left;
+	max-width: 300px;
+
+}
+li{
+	padding: 5px 10px;
+}
+.genel{
+	max-width: 1600px;
+	margin: 40px auto;
+}
+.main{
+
+	background-color: white;
+	max-width: 900px;
+	margin: 0px auto;
+	padding: 20px;
+	font-family: Open Sans;
+}
+
+a:link, a:visited { 
+    color: white;
+    text-decoration: none;
+}
+	button{
+    background-color: #243859; /* Green */
+    border: none;
+    font-family: Open Sans;
+    color: white;
+    padding: 0px 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    height: 55px;
+
+		}
+
+	button:hover {
+    background-color: #0f1250; /* Green */
+    color: white;
+}
