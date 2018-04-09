@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn Programming</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="code.css">
+</head>
+<body>
+<div class="navigator">
+<span style="margin-left: 440px">
+<button href="">HOME</button>
+<button href="">TUTORIALS</button>
+<button href="">DOWNLOADS</button>
+</span>
+<button href="" style="margin-right: 440px; float:right">ABOUT ME</button>
+</div>
+<div class="genel">
+<div class="content">
+	<img src="../imgs/pythonimg.png" height="150px" width="150px" style="margin-left: 50px;">
+	<ul>
+		<li><a href="whatisprogramming.html">What Is Programming?</a></li>
+		<li><a href="howtostart.html">How to Start</a></li>
+		<li><a href="whichlang.html">Which Language?</a></li>
+		<li><a href="appsofpython.html">Applications of Python</a></li>
+		<li><a href="installpython.html">Installing Python and Softwares</a></li>
+		<li><a href="firstprogramme.html">First Programme: "HelloWorld"</a></li>
+		<li><a href="variables.html">Variables</a></li>
+		<li><a href="binarysystem.html">Binary System</a></li>
+		<li><a href="operators.html">Operators</a></li>
+		<li><a href="">Variables - Exercise</a></li>
+		<li><a href="">Lists</a></li>
+		<li><a href="">Lists - Exercise</a></li>
+		<li><a href="">If Else</a></li>
+		<li><a href="">Loops</a></li>
+		<li><a href="">Loops - Exercise</a></li>
+		<li><a href="">Functions</a></li>
+		<li><a href="">Functions - Exercise</a></li>
+		<li><a href="">Challenges</a></li>
+	</ul>
+</div>
+<div class="main">
+<h1>Variables</h1>
+<p>Variables are used to store data on your program. For example, you need to keep track of number of apples in a crate, or name of a student, or a number which has decimals, or a statement that can be true or false. All those data are stored in different types of variables, you can think variables as x in math. You can give it any value you want. How do you declare a variable in python? It is as simple as writing your information on a paper like: cost -> 500$. In python:</p>
+	<table align>
+        <tr><td class="num">1</td><td>a=3</td></tr>
+    </table>
+    <p>Here we created a variable called “a” and its value is 3. You can use this value by using the variable’s name. If you want to print it, logically you should write</p>
+     <table align>
+        <tr><td class="num">2</td><td>print(a)</td></tr>
+    </table>
+    <p>It should print out 3, not the letter a. Why? In last lesson when we wrote “Hello World!” it printed out Hello World! However now it didn’t print out the letter a. Because when we write a computer detect it as a variable and use it value to make process. In here our process is printing so, it printed out 3. </p>
+    <p>Also, you can change variables’ values easily wrote </p>
+    <table align>
+        <tr><td class="num">1</td><td>a=3</td></tr>
+        <tr><td class="num">2</td><td>a=5</td></tr>
+        <tr><td class="num">3</td><td>print(a)</td></tr>
+    </table>
+    <p>Now it should print out 5, because the last value that we assigned to variable a was 5.</p>
+    <img src="../imgs/variables1.png" width="100%">
+    <h1>Variable Types</h1>
+    <p>There are different kind of variables in programming, in our example a was an integer. How did we know that? It is because its value is an integer however, we didn’t declare that it is a variable. In most of the programming languages you should declare the type of the variable but, python isn’t strict about that topic. That means you can change the variable’s type easily. Before trying to change variable’s type, let’s see what type of variables are there.</p>
+    <h2>String</h2>
+    <p>Strings can store texts. It can be your name, a company’s name, a special text. Let’s try printing out your name with a string variable. First you need a declare a variable and assign its value as your name.</p>
+        <table align>
+        <tr><td class="num">1</td><td>name="Kerem"</td></tr>
+        <tr><td class="num">2</td><td>print(name)</td></tr>
+    </table>
+    <p>As you can easily notice we used “” while declaring a string. It is because python can understand that it is a string if we write it between “”. If you didn’t understand that read it again and try it on IDLE. You should always try what you learn to get it completely. Here is a short question for you, what will be the output?</p>
+    <table align>
+        <tr><td class="num">1</td><td>kerem = 3</td></tr>
+        <tr><td class="num">2</td><td>name = "kerem</td></tr>
+        <tr><td class="num">3</td><td>print("name")</td></tr>
+    </table>
+    <p>If you can't determine output, let's try it. Here are the results.</p>
+    <img src="../imgs/variables2.png" width="100%">
+	<p>Output is name because, when we put “” between name program will see whole statement as a string. I hope I explained it briefly.</p> 
+	<h2>Boolean</h2>
+	<p>Boolean’s value can be true or false. For example the state of a student’s exam can be pass or fail. We can store this data like this if student passed the exam (also we can change it)</p>
+	<table align>
+        <tr><td class="num">1</td><td>pass = True</td></tr>
+    </table>
+    <h2>Float - Double</h2>
+    <p>
+    	Float and double are used to store decimal numbers however, in python you don’t need to declare a variable as a float, double or integer. Therefore, you don’t really care about if it is a float or integer while writing in python. Difference between float and double that, float stores less decimal places than double. You can declare it like this:
+    </p>   
+    <table align>
+        <tr><td class="num">1</td><td>varfloat = 5.489</td></tr>
+    </table>
+    <p>There are other kinds of variables too, but it is enough for beginning. Also you can change variables’ types. It is much simpler than other languages. Here is an example of changing from integer to string.</p> 
+    <table align>
+        <tr><td class="num">1</td><td>varint = 3</td></tr>
+        <tr><td class="num">2</td><td>varstring = str(varint)</td></tr>
+    </table>  
+    <p>Varstring will be and process as a string. You will see applications of casting (changing type of variable) when we learn more functions other than print.</p>
+</div>
+</div>
+</body>
+</html>

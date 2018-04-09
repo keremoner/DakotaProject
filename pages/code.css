@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+table{border-collapse: collapse;
+    width: auto;
+    font-family: 'Source Code Pro', monospace;
+    color:black;
+    align-self: center;
+}
+td,th{text-align: left;padding: 8px;width: auto;}
+
+tr{background-color: #F2F2F2;}
+
+.num{
+    width: auto;
+    border-right: solid 2px #FFF;
+}
+
