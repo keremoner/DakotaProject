@@ -4,49 +4,110 @@
 	<title>Learn Programming</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="code.css">
 </head>
 <body>
 <div class="navigator">
-<span style="margin-left: 440px">
-<button href="">HOME</button>
-<button href="">TUTORIALS</button>
-<button href="">DOWNLOADS</button>
+<span>
+<button onclick="window.location.href='whatisprogramming.html'">TUTORIALS</button>
+<button onclick="window.location.href='downloads.html'">DOWNLOADS</button>
 </span>
-<button href="" style="margin-right: 440px; float:right">ABOUT ME</button>
 </div>
 <div class="genel">
 <div class="content">
 	<img src="../imgs/pythonimg.png" height="150px" width="150px" style="margin-left: 50px;">
 	<ul>
-		<li><a href="whatisprogramming.html">What Is Programming?</a></li>
-		<li><a href="howtostart.html">How to Start</a></li>
-		<li><a href="whichlang.html">Which Language?</a></li>
-		<li><a href="appsofpython.html">Applications of Python</a></li>
-		<li><a href="installpython.html">Installing Python and Softwares</a></li>
-		<li><a href="firstprogramme.html">First Programme: "HelloWorld"</a></li>
-		<li><a href="variables.html">Variables</a></li>
-		<li><a href="binarysystem.html">Binary System</a></li>
-		<li><a href="operators.html">Operators</a></li>
-		<li><a href="">Variables - Exercise</a></li>
-		<li><a href="">Lists</a></li>
-		<li><a href="">Lists - Exercise</a></li>
-		<li><a href="">If Else</a></li>
-		<li><a href="">Loops</a></li>
-		<li><a href="">Loops - Exercise</a></li>
-		<li><a href="">Functions</a></li>
-		<li><a href="">Functions - Exercise</a></li>
-		<li><a href="">Challenges</a></li>
+        <li><a href="whatisprogramming.html">What Is Programming?</a></li>
+        <li><a href="howtostart.html">How to Start</a></li>
+        <li><a href="whichlang.html">Which Language?</a></li>
+        <li><a href="appsofpython.html">Applications of Python</a></li>
+        <li><a href="installpython.html">Installing Python and Softwares</a></li>
+        <li><a href="firstprogramme.html">First Programme: "HelloWorld"</a></li>
+        <li><a href="variables.html">Variables</a></li>
+        <li><a href="operators.html">Operators</a></li>
 	</ul>
 </div>
 <div class="main">
-	<h1>How to Start</h1>
-	<p>To start with programming, first you need to choose a language that is most suitable with your goals. There are so many programming languages around the world but mostly people start with easier and more popular languages. Then you need to install the required software in order to write and run applications in that language.</p>
+	<h1>Operators</h1>
+	<p>Operators, as you can guess, are used to do some changes or process over variables. There are different kind of operators however, they aren’t much different than math.</p>
+	<h2>Arithmetic Operators</h2>
 	<p>
-	I will tell about programming languages, what are the applications of each language and which are most suitable for beginners. After choosing your language and installing software you are ready to write code however, you will have to practice the subjects that we cover in order not to forget them and understand them perfectly.	
+		These are simple operators that we are used to see in math. Use of plus, minus, multiplication, and division operators:
 	</p>
-	<p>
-	Also, once you learn the concept and the logic of programming you will be able to learn any programming language so easier. For example, I learned many things about coding in Java, after reading some documentations about Python, I was able to create similar applications in Python. Therefore, you can first learn the logic of programming with a basic language then you can switch to a language which’s applications are more interesting to you. 
-	</p>
+		<table align>
+        <tr><td class="num">1</td><td>a=3</td></tr>
+    </table>
+    <p>Here we created a variable called “a” and its value is 3. You can use this value by using the variable’s name. If you want to print it, logically you should write</p>
+     <table align>
+        <tr><td class="num">1</td><td>a = 3+2</td></tr>
+        <tr><td class="num">2</td><td>b = a-1</td></tr>
+        <tr><td class="num">3</td><td>c = b*2</td></tr>
+        <tr><td class="num">4</td><td>d = c/8</td></tr>
+        <tr><td class="num">5</td><td>print(a,b,c,d)</td></tr>
+    </table>
+    <img src="../imgs/operators1.png" width="100%">
+    <p>You can print multiple things by using comma. There isn’t any complicated stuff with these simple operators. There are more operators in python to make things easier. Exponential (**), mod (%), floor division (//)</p>
+     <table align>
+        <tr><td class="num">1</td><td>a = 2**3</td></tr>
+        <tr><td class="num">2</td><td>b = 5%2</td></tr>
+        <tr><td class="num">3</td><td>c = 7//3</td></tr>
+        <tr><td class="num">4</td><td>print(a,b,c)</td></tr>
+    </table>
+    <img src="../imgs/operators2.png" width="100%">
+    <p>
+    	Above code means a = 2 to the power of 3 = 8 and 5 = b mod(2) which means what is the quotient when we divide 5 by 2 = 1. Floor division takes the integer part of division, 7//3 = 2.
+    </p>    
+    <h2>Comparison Operators</h2>
+    <p>Comparison operators can be used whether a statement is true or not. There is a great example:</p>
+     <table align>
+        <tr><td class="num">1</td><td>a = 5</td></tr>
+        <tr><td class="num">2</td><td>b = 3</td></tr>
+        <tr><td class="num">3</td><td>samplebool = a>b</td></tr>
+        <tr><td class="num">4</td><td>print(samplebool)</td></tr>
+    </table> 
+    <p>
+    	Above code when we write a>b, it asks “Is a greater than b?”. a is 5 and b is 3 so, answer of this question is true. Then it assigns true to samplebool variable because a>b represents True. You can try it to see the output.
+    </p>
+    <p>
+    	There are more comparison operators as there are in math. Here is a list for comparison operators.
+    </p>
+    <ul>
+    	<li>== , is equal</li>
+    	<li>!= , not(is equal) which means it will take the opposite answer of is equal. That's what ! does.</li>
+    	<li>> , is greater</li>
+    	<li>< , is less</li>
+    	<li>>= , is greater or equal</li>
+    	<li><= , is less or equal</li>
+    </ul>
+    <h2>Assignment Operators</h2>
+    <p>
+    	You have learned one of the assignment operators which is =. You could understand that it isn’t same sign with math (equal). Indeed, = operator assigns values from fright side operand to left side operand. For example, you can write a code like this if you want to increase a’s value by 1.
+    </p>
+     <table align>
+        <tr><td class="num">1</td><td>a = 4</td></tr>
+        <tr><td class="num">2</td><td>a = a+1</td></tr>
+    </table> 
+    <p>Let’s analyze it. Value of right side is a+1 which equals 5. Then it assigns 5 (from right side) to a (to left side). However, there is another way to do that.</p>
+     <table align>
+        <tr><td class="num">1</td><td>a = 4</td></tr>
+        <tr><td class="num">2</td><td>a += 1</td></tr>
+    </table> 
+    <p>
+    	Above code does that process, takes right operand’s value and left operand’s value, does calculation with the operator + (which is left side of =) and assign the result of calculation to the left operand. Left side’s value is 4, right side’s value is 1, operator is + so result is 5, therefore a = 5. 
+    </p>
+    <p>
+    	You can do those kinds of assignments with all kind of arithmetic operators stick to equal sign. Here is a short list for assignment operators:
+    </p>
+    <ul>
+    	<li>+= , a+=b means a=a+b</li>
+    	<li>-= , a-=b means a=a-b</li>
+    	<li>*= , a*=b means a=a*b</li>
+    	<li>/= , /= means a/=b</li>
+    	<li>%= , %= means a=a%b</li>
+    	<li>**= , a**=b means a=a**b</li>
+    	<li>//= , a//=b means a=a//b</li>
+    </ul>
+    <p>These are the fundamental operators that you should definitely be able to use. Of course, there are other operators such as bitwise operators and specific operators for python. However, they aren’t needed to be learned specifically as an operator or, they haven’t got much use.</p>
 </div>
 </div>
 </body>
